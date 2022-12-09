@@ -42,7 +42,6 @@ function doubleInteger(i) {
 + Analysed requests and dialogues and maintained the linguistic database.
 + Organised and moderated labelling projects (for Machine Learning).
 + Took part in Natural Language Processing projects.
-+ 
 ## Education
 --------------
 * **Perm State Humanitarian Pedagogical University**
