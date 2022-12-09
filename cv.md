@@ -14,6 +14,7 @@ As a linguistics expert at a tech startup, I have performed various duties and g
 - Git
 - Python (basic knowledge)
 - Figma
+
 ## Samples of code
 ```
 function doubleInteger(i) {
