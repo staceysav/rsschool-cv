@@ -2,6 +2,7 @@
     --light-gray-color: #F1EFEF;
     --yellow-color: #E4FA5C;
     --sheet-color: white;
+    --grayish-color: #a4a4a4;
   }
 
 * {
@@ -9,12 +10,13 @@
     padding: 0;
     box-sizing: border-box;
     /* font-family: "Roboto", sans-serif; */
+    line-height: 150%; /* does it work this way??? */
 }
 
 h1 {
     text-transform: uppercase;
     margin-bottom: 1rem;
-    font-size: ;
+    /* font-size: ; */
 }
 
 h2 {
@@ -25,6 +27,7 @@ h2 {
     font-weight: normal;
     font-variant: small-caps;
     text-transform: lowercase;
+    margin-bottom: 1rem;
 }
 
 body {
@@ -35,13 +38,17 @@ section {
     margin: 3rem;
 }
 
+.bulleted-list {
+    margin-left: 3rem;
+}
+
 .wrapper {
     /* width: 970px; */
     height: 3100px;
     width: 55%;
     /* height: 80%; */
     background-color: var(--sheet-color); /* change tests */
-    margin: 10px auto;
+    margin: 20px auto;
     box-shadow: 10px 10px rgba(0,0,0,.10); /* borders, another variant - https://codepen.io/neutraltone/pen/pqmxjb */
     transition: all .4s ease; /* border */
 }
@@ -105,4 +112,23 @@ main {
     height: 800px; /* delete tests */
 }
 
+#summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts {
+    margin-right: 6rem;
+}
+
+.grayish-text {
+    color: var(--grayish-color);
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
