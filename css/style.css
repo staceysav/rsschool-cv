@@ -1,3 +1,83 @@
-body {
-    background-color: #ffecd2;
+:root {
+    --light-gray-color: #F1EFEF;
+    --yellow-color: #E4FA5C;
+    --sheet-color: white;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Roboto", sans-serif; */
 }
+
+h2 {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 3px 6px;
+    font-weight: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+body {
+    background-color: var(--light-gray-color);
+}
+
+section {
+    margin: 3rem;
+}
+
+.wrapper {
+    width: 70%;
+    height: 80%;
+    background-color: var(--sheet-color); /* change tests */
+    margin: 10px auto;
+    box-shadow: 10px 10px rgba(0,0,0,.10); /* borders, another variant - https://codepen.io/neutraltone/pen/pqmxjb */
+    transition: all .4s ease; /* border */
+}
+
+.wrapper:hover { /* borders */
+    box-shadow: 5px 5px rgba(0,0,0,.15);
+}
+
+header {
+    width: 100%;
+    background-color: var(--yellow-color);
+}
+
+.header__nav {
+    margin: auto 0px auto auto;
+}
+
+.nav-container {
+    background-color: var(--sheet-color);
+    height: 3rem;
+    display: flex;
+    /* justify-content: end; - doesn't work! */
+
+}
+
+.nav-item {
+    list-style-type: none;
+    /* Remove points */
+    display: inline-block;
+    /* Display points horizontally */
+    margin-right: 1.5rem;
+    font-size: 20px;
+  }
+
+.nav-item a {
+    text-decoration: none;
+}
+
+.header__bright {
+    height: 14rem;
+}
+
+main {
+    height: 800px; /* delete tests */
+}
+
+
