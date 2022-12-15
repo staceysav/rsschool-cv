@@ -132,3 +132,12 @@ main {
     justify-content: space-around;
 }
 
+td {
+    border-bottom: 1px solid var(--grayish-color);
+    padding: 1rem;
+}
+
+tr:first-child td {
+    border-top: 1px solid var(--grayish-color);
+}
+
