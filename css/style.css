@@ -11,6 +11,10 @@
     /* font-family: "Roboto", sans-serif; */
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 h2 {
     background-color: black;
     color: white;
@@ -30,8 +34,8 @@ section {
 }
 
 .wrapper {
-    width: 70%;
-    height: 80%;
+    width: 60%;
+    /* height: 80%; */
     background-color: var(--sheet-color); /* change tests */
     margin: 10px auto;
     box-shadow: 10px 10px rgba(0,0,0,.10); /* borders, another variant - https://codepen.io/neutraltone/pen/pqmxjb */
