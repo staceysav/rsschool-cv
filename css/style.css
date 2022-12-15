@@ -13,6 +13,8 @@
 
 h1 {
     text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: ;
 }
 
 h2 {
@@ -34,7 +36,9 @@ section {
 }
 
 .wrapper {
-    width: 60%;
+    /* width: 970px; */
+    height: 3100px;
+    width: 55%;
     /* height: 80%; */
     background-color: var(--sheet-color); /* change tests */
     margin: 10px auto;
@@ -78,6 +82,23 @@ header {
 
 .header__bright {
     height: 14rem;
+    /* display: inline-block; excessive! */display: inline-block;
+    display: flex;
+    justify-content: start;
+}
+
+.profile-image {
+    height: 100%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 7%;
+    padding-right: 3%;
+    border-right: 7px solid var(--sheet-color);
+}
+
+.header-title {
+    display: inline-block;
+    margin: auto 0;
 }
 
 main {
