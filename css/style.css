@@ -189,19 +189,3 @@ footer {
     height: 60px;
     width: 80px;
 }
-
-.circles-container {
-    display: inline-block;
-}
-
-.circle {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-
-.circle-dark {
-    background-color: var(--grayish-color);
-}
