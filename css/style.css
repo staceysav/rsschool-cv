@@ -45,6 +45,15 @@ section {
     margin: 3rem;
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: #333333;
+    border-bottom: 1px solid var(--yellow-color);
+}
+
 .bulleted-list {
     margin-left: 3rem;
 }
@@ -130,7 +139,7 @@ header {
 }
 
 .contacts {
-    margin-right: 6rem;
+    margin-right: 5rem;
 }
 
 .job:last-child {
@@ -182,7 +191,11 @@ tr:first-child td {
 footer {
     margin-bottom: 0px;
     background-color: var(--grayish-color);
-    height: 6em;
+    height: 5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin: 20px auto; */
 }
 
 .footer-image {
