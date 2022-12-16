@@ -30,6 +30,11 @@ h2 {
     font-variant: small-caps;
     text-transform: lowercase;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+h4 {
+    margin-bottom: 0.5rem;
 }
 
 body {
@@ -42,6 +47,10 @@ section {
 
 .bulleted-list {
     margin-left: 3rem;
+}
+
+.remove-bullets {
+    list-style-type: none;
 }
 
 .wrapper {
@@ -124,6 +133,10 @@ header {
     margin-right: 6rem;
 }
 
+.job:last-child {
+    margin-top: 1rem;
+}
+
 .grayish-text {
     color: var(--grayish-color);
 }
@@ -167,13 +180,28 @@ tr:first-child td {
 }
 
 footer {
-    /* position: absolute; */
     margin-bottom: 0px;
     background-color: var(--grayish-color);
-    height: 4em;
+    height: 6em;
 }
 
 .footer-image {
     height: 60px;
     width: 80px;
+}
+
+.circles-container {
+    display: inline-block;
+}
+
+.circle {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.circle-dark {
+    background-color: var(--grayish-color);
 }
