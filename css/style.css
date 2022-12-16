@@ -1,3 +1,189 @@
+:root {
+    --light-gray-color: #F1EFEF;
+    --yellow-color: #E4FA5C;
+    --sheet-color: white;
+    --grayish-color: #a4a4a4;
+    --text-color: #333333,;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Roboto", sans-serif; */
+    line-height: 150%; /* does it work this way??? */
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    /* font-size: ; */
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 3px 6px;
+    font-weight: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+h4 {
+    margin-bottom: 0.5rem;
+}
+
 body {
-    background-color: #ffecd2;
+    background-color: var(--light-gray-color);
+}
+
+section {
+    margin: 3rem;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #333333;
+    border-bottom: 1px solid var(--yellow-color);
+}
+
+.bulleted-list {
+    margin-left: 3rem;
+}
+
+.remove-bullets {
+    list-style-type: none;
+}
+
+.wrapper {
+    height: 2500px;
+    width: 55%;
+    background-color: var(--sheet-color); 
+    margin: 20px auto;
+    box-shadow: 10px 10px rgba(0,0,0,.10); /* borders, another variant - https://codepen.io/neutraltone/pen/pqmxjb */
+    transition: all .4s ease; /* border */
+}
+
+.wrapper:hover { /* borders */
+    box-shadow: 5px 5px rgba(0,0,0,.15);
+}
+
+header {
+    width: 100%;
+    background-color: var(--yellow-color);
+}
+
+.header__nav {
+    margin: auto 0px auto auto;
+}
+
+.nav-container {
+    background-color: var(--sheet-color);
+    height: 3rem;
+    display: flex;
+}
+
+.nav-item {
+    list-style-type: none; /* Remove points */
+    display: inline-block;/* Display points horizontally */
+    margin-right: 1.5rem;
+    font-size: 20px;
+  }
+
+.nav-item a {
+    text-decoration: none;
+}
+
+.header__bright {
+    height: 14rem;
+    display: flex;
+    justify-content: start;
+}
+
+.profile-image {
+    height: 100%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 7%;
+    padding-right: 3%;
+    border-right: 7px solid var(--sheet-color);
+}
+
+.header-title {
+    display: inline-block;
+    margin: auto 0;
+}
+
+#summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts {
+    margin-right: 5rem;
+}
+
+.job:last-child {
+    margin-top: 1rem;
+}
+
+.grayish-text {
+    color: var(--grayish-color);
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+td {
+    border-bottom: 1px solid var(--grayish-color);
+    padding: 1rem;
+}
+
+tr:first-child td {
+    border-top: 1px solid var(--grayish-color);
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects-item {
+    width: 50%;
+    height: 50%; 
+}
+
+.projects-item__img {
+    width: 90%;
+    height: 90%;
+    padding: 5px;
+}
+
+footer {
+    margin-bottom: 0px;
+    background-color: var(--grayish-color);
+    height: 5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-image {
+    height: 60px;
+    width: 80px;
 }
